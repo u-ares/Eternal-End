@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "eternal-end",
+	"version": "${version}",
+	"name": "Eternal End",
+	"description": "Below and Beyond -  a test mod",
+	"authors": [
+		"ItsDoku"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/eternal-end/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.doku.eternalend.EternalEnd"
+		],
+		"client": [
+			"net.doku.eternalend.EternalEndClient"
+		],
+		"fabric-datagen": [
+			"net.doku.eternalend.EternalEndDataGenerator"
+		]
+	},
+	"mixins": [
+		"eternal-end.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.6",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
